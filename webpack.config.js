@@ -3,7 +3,7 @@ const path = require('path');
 
 
 module.exports = {
-    entry: './app.js',
+    entry: ['webpack-hot-middleware/client', './app.js'],
     output: {
         filename: 'main.js',
         path: path.join(__dirname, './bundle'),
